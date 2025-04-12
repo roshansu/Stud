@@ -14,12 +14,12 @@ const Registeruser = () => {
       const file = e.target.files[0];
       if (!file) return;
   
-      const options = {
-        maxSizeMB: 1, // Max size in MB
-        maxWidthOrHeight: 1024, // Resize if bigger
-        useWebWorker: true,
-      };
-  
+     const options = {
+  maxSizeMB: 0.1, // 0.1 MB = 100 KB
+  maxWidthOrHeight: 1024, // Resize if needed
+  useWebWorker: true,
+  initialQuality: 0.6 // You can tweak this if needed
+};
       try {
         const compressedFile = await imageCompression(file, options);
         console.log('Original:', file.size / 1024, 'KB');
