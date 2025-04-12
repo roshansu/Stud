@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import inputState from "../../Frontend/src/Slice";
+import inputState from "./Slice";
 
 const store = configureStore({
     reducer: {
