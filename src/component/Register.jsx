@@ -48,7 +48,7 @@ const Registeruser = () => {
     formData.append('comment', [])
   
     try {
-      const res = await fetch("http://localhost:3000/register", {
+      const res = await fetch("https://stud-backend-production.up.railway.app/register", {
         method: "POST",
         headers:{
           contentType:'application/json'
