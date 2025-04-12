@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import imageCompression from 'browser-image-compression';
+import Popup from './Popup';
 
 const Registeruser = () => {
 
@@ -9,6 +10,7 @@ const Registeruser = () => {
     const[Image, setImage] = useState('')
     const[Course, setCourse] = useState('')
     const[Year, setYear] = useState(0)
+    const[r, setR] = useState(false)
 
     const handleFileChange = async (e) => {
       const file = e.target.files[0];
@@ -37,6 +39,7 @@ const Registeruser = () => {
       alert("Please fill all the fields.");
       return;
     }
+      setR(r?false:true);
   
     const formData = new FormData();
     formData.append("name", Name);
@@ -104,6 +107,9 @@ const Registeruser = () => {
               <button type='submit'  onClick={(e)=>handleSubmit(e)} className='bg-blue-500 cursor-pointer text-white p-2 rounded-lg'>Submit</button>
             </form>
           </div>
+       {
+           r?<Popup msg={"please wait "}/>:''
+       }
 
         </div>
   )
