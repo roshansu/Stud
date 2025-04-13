@@ -22,7 +22,7 @@ const Home = () => {
         setLoading(true)
         // localhost:3000/
         
-        fetch("https://stud-backend-production.up.railway.app/",{
+        fetch("https://zooming-integrity-production.up.railway.app/",{
             method:"GET",
             headers:{
                 'Content-Type':'application/json'
