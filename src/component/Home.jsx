@@ -68,7 +68,7 @@ const Home = () => {
         console.log('hated', finalData)
     }
     else if(filter === 1){
-        const filteredData = [...finalData].sort((a, b) => Number(b.likes) - Number(a.likes));
+        const filteredData = [...finalData].sort((a, b) => Number(b.like) - Number(a.like));
         finalData = [...filteredData]
         console.log('loved', finalData)
     }
