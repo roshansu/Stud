@@ -38,7 +38,7 @@ const Nav = () => {
           <option value="BSC AG">BSC AG</option>
           <option value="OTHER">OTHER</option>
         </select>
-        <Link to={'/about'} className='lg:px-3 h-fit lg:py-2 p-1 bg-[#ced4da] font-medium text-base rounded-lg lg:text-lg cursor-pointer'>About</Link>
+{/*         <Link to={'/about'} className='lg:px-3 h-fit lg:py-2 p-1 bg-[#ced4da] font-medium text-base rounded-lg lg:text-lg cursor-pointer'>About</Link> */}
       </nav>
     </div>
   )
