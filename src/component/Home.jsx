@@ -38,7 +38,7 @@ const Home = () => {
         fetchData()
     }},[])
 
-    console.log(data)
+    console.log('data',data)
 
     const handleClick = (e) => {
         setActive(e)
@@ -54,21 +54,23 @@ const Home = () => {
    
     if(courseFilter !== 'All'){
         const filteredData = [...finalData].filter((item) => item.course == courseFilter);
-        finalData = filteredData
+       finalData = [...filteredData]
     }
 
     if(yearFilter !== 0){
         const filteredData = [...finalData].filter((item) => item.year == yearFilter);
-       finalData = filteredData
+       finalData = [...filteredData]
     }
 
     if(filter === 2){
-        const filteredData = [...finalData].sort((a, b) => a.like - b.like);
-        finalData = filteredData
+        const filteredData = [...finalData].sort((a, b) => Number(a.like) - Number(b.like));
+        finalData = [...filteredData]
+        console.log('hated', finalData)
     }
     else if(filter === 1){
-        const filteredData = [...finalData].sort((a, b) => b.likes - a.likes);
-        finalData = filteredData
+        const filteredData = [...finalData].sort((a, b) => Number(b.likes) - Number(a.likes));
+        finalData = [...filteredData]
+        console.log('loved', finalData)
     }
 
     setGetData(finalData)
