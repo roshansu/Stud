@@ -24,7 +24,7 @@ const Nav = () => {
           <i className="fa-solid fa-user-plus "></i>  
         </Link>
       
-        <select onChange={(e)=>dispatch(setCourse(e.target.value))} className='border-2 border-gray-300 rounded-lg lg:p-2 lg:text-lg  cursor-pointer'>
+        <select onChange={(e)=>dispatch(setCourse(e.target.value))} className='border-2 h-fit border-gray-300 rounded-lg lg:p-2 lg:text-lg  cursor-pointer'>
           <option value="All">Change course</option>
           <option value="All">All</option>
           <option value="BCA">BCA</option>
@@ -38,7 +38,7 @@ const Nav = () => {
           <option value="BSC AG">BSC AG</option>
           <option value="OTHER">OTHER</option>
         </select>
-        <Link to={'/about'} className='lg:px-3 h-fit lg:py-2 p-1 bg-[#ced4da] font-medium rounded-lg lg:text-lg cursor-pointer'>About me</Link>
+        <Link to={'/about'} className='lg:px-3 h-fit lg:py-2 p-1 bg-[#ced4da] font-medium text-base rounded-lg lg:text-lg cursor-pointer'>About</Link>
       </nav>
     </div>
   )
