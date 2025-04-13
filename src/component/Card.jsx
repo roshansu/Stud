@@ -28,7 +28,7 @@ const Card = ({names, courses, years, photo, like, dislike, comments, id}) => {
       }
       setWrite(write?false:true)
     
-        await fetch("https://stud-backend-production.up.railway.app/", {
+        await fetch("https://zooming-integrity-production.up.railway.app/", {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const Card = ({names, courses, years, photo, like, dislike, comments, id}) => {
         setLikes(true)
         setLikeCount(likeCount+1)
         
-      await fetch("https://stud-backend-production.up.railway.app/", {
+      await fetch("https://zooming-integrity-production.up.railway.app/", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
