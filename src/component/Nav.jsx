@@ -25,7 +25,7 @@ const Nav = () => {
         </Link>
 
         
-
+<p>change course</p>
         <select onChange={(e)=>dispatch(setCourse(e.target.value))} className='border-2 border-gray-300 rounded-lg lg:p-2 lg:text-lg  cursor-pointer'>
           <option value="All">All</option>
           <option value="BCA">BCA</option>
