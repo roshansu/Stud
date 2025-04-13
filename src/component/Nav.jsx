@@ -24,7 +24,7 @@ const Nav = () => {
           <i className="fa-solid fa-user-plus "></i>  
         </Link>
 
-        
+ <div>       
 <p>change course</p>
         <select onChange={(e)=>dispatch(setCourse(e.target.value))} className='border-2 border-gray-300 rounded-lg lg:p-2 lg:text-lg  cursor-pointer'>
           <option value="All">All</option>
@@ -39,7 +39,7 @@ const Nav = () => {
           <option value="BSC AG">BSC AG</option>
           <option value="OTHER">OTHER</option>
         </select>
-
+</div>
         <Link to={'/about'} className='lg:px-3 lg:py-2 p-1 bg-[#ced4da] font-medium rounded-lg lg:text-lg cursor-pointer'>About me</Link>
       </nav>
     </div>
