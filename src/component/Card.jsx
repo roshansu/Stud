@@ -104,7 +104,7 @@ const Card = ({names, courses, years, photo, like, dislike, comments, id}) => {
           <div className='mt-3 border-b-2 pb-3 border-amber-700 '>
             <div className='flex  text-gray-700 text-lg font-medium items-center gap-2'>
                       <i className="fa-solid fa-circle-user"></i>
-                      <p>&bull; Anonymous</p>
+                      <p>&bull; unknown user</p>
               </div>
               <p className='text-gray-600 mt-1 text-lg'>{comments[1]?comments[1]:'No opinion'}</p>
           </div>
