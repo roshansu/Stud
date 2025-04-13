@@ -15,11 +15,11 @@ const Nav = () => {
   return (
     <div className='fixed bg-white z-10  border-b border-gray-300 top-0 w-full'>
       <nav className='p-2 lg:p-4 flex justify-between lg:gap-6 lg:justify-center '>
-        <Link to={"/"} className="flex items-center border-r border-cyan-100  lg:mr-6 pr-2 lg:pr-4  text-lg gap-2 lg:gap-3 font-bold lg:text-3xl">
+        <Link to={"/"} className="flex h-fit items-center border-r border-cyan-100  lg:mr-6 pr-2 lg:pr-4  text-lg gap-2 lg:gap-3 font-bold lg:text-3xl">
             <p className=''>Stud</p>
             <i className="fa-solid fa-user-graduate text-[#74C0FC]" ></i>
         </Link>
-        <Link to={'/register'} className='flex items-center font-medium p-1 gap-1 lg:gap-3 lg:text-xl lg:px-3 lg:py-2 cursor-pointer rounded-lg bg-[#ffe6a7]'>
+        <Link to={'/register'} className='flex h-fit items-center font-medium p-1 gap-1 lg:gap-3 lg:text-xl lg:px-3 lg:py-2 cursor-pointer rounded-lg bg-[#ffe6a7]'>
           <p>Register</p>
           <i className="fa-solid fa-user-plus "></i>  
         </Link>
@@ -40,7 +40,7 @@ const Nav = () => {
           <option value="OTHER">OTHER</option>
         </select>
 </div>
-        <Link to={'/about'} className='lg:px-3 lg:py-2 p-1 bg-[#ced4da] font-medium rounded-lg lg:text-lg cursor-pointer'>About me</Link>
+        <Link to={'/about'} className='lg:px-3 h-fit lg:py-2 p-1 bg-[#ced4da] font-medium rounded-lg lg:text-lg cursor-pointer'>About me</Link>
       </nav>
     </div>
   )
