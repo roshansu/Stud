@@ -87,7 +87,8 @@ const Home = () => {
   return (
     <div className='bg-[#eef4ed] pb-16 pt-14  lg:pt-24'>
        <div className='flex  justify-center'>
-            <p className='lg:max-w-1/2 p-2 text-[#023047] text-lg font-bold  text-center lg:text-2xl'>What do people think about you and what do you think about them? write your opinion anonymously. just chill </p>
+            <p className='lg:max-w-1/2 p-2 text-[#023047] text-lg font-bold  text-center lg:text-2xl'>jisne bhi jis bhi profile pe comment kiya hai uska name kal tak reveal ho jaega
+        </p>
        </div>
        <div className='flex mt-6 lg:flex-nowrap flex-wrap px-2 justify-center items-center gap-3 lg:text-base text-sm lg:gap-6'>
             <button onClick={()=>handleClick(0)}  className={`${active===0?'bg-[#003049] text-white':'bg-white  text-black'} px-3 py-1 border cursor-pointer border-gray-300  font-medium rounded-md lg:text-lg`}>All</button>
