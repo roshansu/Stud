@@ -80,14 +80,14 @@ const Home = () => {
 
     if(loading) return <div className='flex px-2 justify-center flex-col items-center h-screen'>
         <i className="fa-solid  fa-spinner animate-spin text-4xl"></i>
-        <p className='text-2xl mt-3 text-center'>This web app is made for fun plz be kind :)</p>
+        <p className='text-2xl mt-3 text-center'>jisne bhi comment kiya hai uska name kal tak reveal ho jaega</p>
     </div>
 
 
   return (
     <div className='bg-[#eef4ed] pb-16 pt-14  lg:pt-24'>
        <div className='flex  justify-center'>
-            <p className='lg:max-w-1/2 p-2 text-[#023047] text-lg font-bold  text-center lg:text-2xl'>jisne bhi jis bhi profile pe comment kiya hai uska name kal tak reveal ho jaega
+            <p className='lg:max-w-1/2 p-2 text-[#023047] text-lg font-bold  text-center lg:text-2xl'> comment at your own risk
         </p>
        </div>
        <div className='flex mt-6 lg:flex-nowrap flex-wrap px-2 justify-center items-center gap-3 lg:text-base text-sm lg:gap-6'>
