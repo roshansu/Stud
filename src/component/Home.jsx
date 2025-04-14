@@ -80,7 +80,7 @@ const Home = () => {
 
     if(loading) return <div className='flex px-2 justify-center flex-col items-center h-screen'>
         <i className="fa-solid  fa-spinner animate-spin text-4xl"></i>
-        <p className='text-2xl mt-3 text-center'>jisne bhi comment kiya hai uska name kal tak reveal ho jaega</p>
+        <p className='text-2xl mt-3 text-center'>This web app is made for fun plz be kind and dont hurt anyone (:</p>
     </div>
 
 
