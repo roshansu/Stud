@@ -19,12 +19,12 @@ const Nav = () => {
             <p className=''>Stud</p>
             <i className="fa-solid fa-user-graduate text-[#74C0FC]" ></i>
         </Link>
-        <Link to={'/register'} className='flex h-fit items-center font-medium p-1 gap-1 lg:gap-3 lg:text-xl lg:px-3 lg:py-2 cursor-pointer rounded-lg bg-[#ffe6a7]'>
+{/*         <Link to={'/register'} className='flex h-fit items-center font-medium p-1 gap-1 lg:gap-3 lg:text-xl lg:px-3 lg:py-2 cursor-pointer rounded-lg bg-[#ffe6a7]'>
           <p>Register</p>
           <i className="fa-solid fa-user-plus "></i>  
-        </Link>
+        </Link> */}
       
-        <select onChange={(e)=>dispatch(setCourse(e.target.value))} className='border-2 h-fit border-gray-300 rounded-lg lg:p-2 lg:text-lg  cursor-pointer'>
+{/*         <select onChange={(e)=>dispatch(setCourse(e.target.value))} className='border-2 h-fit border-gray-300 rounded-lg lg:p-2 lg:text-lg  cursor-pointer'>
           <option value="All">Change course</option>
           <option value="All">All</option>
           <option value="BCA">BCA</option>
@@ -37,7 +37,7 @@ const Nav = () => {
           <option value="LLB">LLB</option>
           <option value="BSC AG">BSC AG</option>
           <option value="OTHER">OTHER</option>
-        </select>
+        </select> */}
 {/*         <Link to={'/about'} className='lg:px-3 h-fit lg:py-2 p-1 bg-[#ced4da] font-medium text-base rounded-lg lg:text-lg cursor-pointer'>About</Link> */}
       </nav>
     </div>
