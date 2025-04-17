@@ -84,11 +84,11 @@ const Card = ({names, courses, years, photo, like, dislike, comments, id}) => {
             </div>
         </div>
 
-        <div className='mt-4 pb-3 border-b border-gray-300 w-full'>
+{/*         <div className='mt-4 pb-3 border-b border-gray-300 w-full'>
             <p>Write your opinion anonymously</p>
             <textarea value={comm} onChange={(e)=>setComm(e.target.value)}  className='px-3 mt-1 outline-none hover:bg-gray-300 transition-all duration-300 w-full py-1 rounded-lg border border-gray-300 bg-gray-100' name="" id=""></textarea>
             <button onClick={handleWrite} className='px-3 mt-2 rounded-lg py-1 cursor-pointer hover:bg-blue-700 transition duration-300 bg-blue-500 text-white font-medium'>Write</button>
-        </div>
+        </div> */}
 
         <div className='pb-3 mt-4 '>
           <div className='mt-3 border-b-2 pb-3 border-amber-700 '>
