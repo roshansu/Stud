@@ -22,7 +22,7 @@ const Home = () => {
         setLoading(true)
         // localhost:3000/
         
-        fetch("https://zooming-integrity-production.up.railway.app/",{
+        fetch("https://zooming-integrity-production.up.railway.app/r",{
             method:"GET",
             headers:{
                 'Content-Type':'application/json'
@@ -80,7 +80,7 @@ const Home = () => {
 
     if(loading) return <div className='flex px-2 justify-center flex-col items-center h-screen'>
         <i className="fa-solid  fa-spinner animate-spin text-4xl"></i>
-        <p className='lg:text-2xl lg:w-[70%] text-xl mt-3 text-center'>If the site is still loading so plz connect the wifi then open it</p>
+        <p className='lg:text-2xl lg:w-[70%] text-xl mt-3 text-center'>This web app is  under maintenance</p>
     </div>
 
 
