@@ -22,7 +22,7 @@ const Home = () => {
         setLoading(true)
         // localhost:3000/
         
-        fetch("https://stud-backend-ten.vercel.app/e",{
+        fetch("https://stud-backend-ten.vercel.app/",{
             method:"GET",
             headers:{
                 'Content-Type':'application/json'
